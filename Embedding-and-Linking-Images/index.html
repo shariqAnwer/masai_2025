@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Gallery</title>
+    <style>
+      body {
+        background-color: #fafafa;
+        margin: 0;
+        padding: 2rem;
+      }
+
+      h1 {
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+
+      .gallery {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        flex-wrap: wrap;
+      }
+
+      section {
+        background-color: #fff;
+        padding: 1rem;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        text-align: center;
+        width: 250px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      img {
+        width: 100%;
+        height: 80%;
+        border-radius: 4px;
+      }
+
+      a {
+        display: inline-block;
+        margin-top: 0.5rem;
+        text-decoration: none;
+        color: #007bff;
+        font-weight: bold;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Small Image Gallery</h1>
+
+    <div class="gallery">
+      <section>
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Everest_North_Face_toward_Base_Camp_Tibet_Luca_Galuzzi_2006.jpg"
+          alt="Snowy mountain landscape"
+        />
+        <a href="https://en.wikipedia.org/wiki/Mountain" target="_blank"
+          >Learn about Mountains</a
+        >
+      </section>
+
+      <section>
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Aerial_view_of_the_Amazon_Rainforest.jpg/500px-Aerial_view_of_the_Amazon_Rainforest.jpg"
+          alt="Dense green forest with sunlight"
+        />
+        <a href="https://en.wikipedia.org/wiki/Forest" target="_blank"
+          >Explore Forests</a
+        >
+      </section>
+
+      <section>
+        <img
+          src="https://thedaily.case.edu/wp-content/uploads/2023/06/underwater-view-768x329.jpg"
+          alt="Blue ocean waves under a clear sky"
+        />
+        <a href="https://en.wikipedia.org/wiki/Ocean" target="_blank"
+          >Discover Oceans</a
+        >
+      </section>
+    </div>
+  </body>
+</html>
