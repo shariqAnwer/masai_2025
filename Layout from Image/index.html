@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sample Semantic Webpage</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      header,
+      footer {
+        background: #020024;
+        background: linear-gradient(
+          180deg,
+          rgba(2, 0, 36, 1) 0%,
+          rgba(9, 9, 121, 1) 2%,
+          rgba(0, 212, 255, 1) 73%
+        );
+        padding: 1rem;
+        text-align: center;
+        color: whitesmoke;
+      }
+      nav a {
+        margin: 0 .5rem;
+        text-decoration: none;
+        color: #fff;
+      }
+      section {
+        padding: 1rem;
+        width: 75%;
+        margin: auto;
+      }
+       table, tr, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding: .5rem;
+      }
+      th {
+        background-color: blue;
+        color: #fff;
+      }
+      form div {
+      margin-bottom: 1.5rem;
+      width: 15rem;
+      display: flex;
+      flex-direction: column;
+    }
+        label {
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+    }
+
+    textarea {
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1rem;
+      transition: border-color 0.3s;
+    }
+
+    input:focus,
+    textarea:focus {
+      border-color: #4CAF50;
+      outline: none;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 60px;
+    }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>My Portfolio</h1>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Projects</a>
+        <a href="#">Contact</a>
+      </nav>
+    </header>
+
+    <section>
+      <article>
+        <h2>Welcome to my Portfolio</h2>
+        <p>
+          The portfolio showcases my project and provides information about my
+          background and contact details.
+        </p>
+      </article>
+
+      <article>
+        <h2>About</h2>
+        <p>
+          Hello, I'm a web developer passionate about building dynamic and
+          responsive websites. I enjoy creating user friendly interfaces and
+          working on cahllenging projects.
+        </p>
+      </article>
+
+      <article class="project-table">
+        <h2>Projects</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Project Name</th>
+              <th>Description</th>
+              <th>Year</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Project Alpha</td>
+              <td>
+                A web based tool for tracking project progress and managing
+                tasks
+              </td>
+              <td>2023</td>
+            </tr>
+            <tr>
+              <td>Project Beta</td>
+              <td>
+                A web based tool for tracking project progress and managing
+                tasks
+              </td>
+              <td>2024</td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+    </section>
+    <section>
+       <h2>Contact</h2>
+       <form>
+        <div>
+          <label>Name</label>
+          <input type="text">
+        </div>
+        <div>
+            <label>Email</label>
+          <input type="email">
+        </div>
+        <div>
+          <label>Message</label>
+          <textarea></textarea>
+        </div>
+        <button>Submit</button>
+       </form>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 My Semantic Webpage. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
