@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Display Properties Demo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f7f7f7;
+    }
+
+    p {
+      margin-bottom: 10px;
+    }
+
+    .block-element {
+      display: block;
+      width: 100%;
+      border: 2px solid #4CAF50;
+      background-color: #e8f5e9;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+
+    .inline-element {
+      display: inline;
+      background-color: #ffecb3;
+      color: #333;
+      padding: 5px;
+      border: 1px solid #ff9800;
+    }
+
+    .inline-block-element {
+      display: inline-block;
+      width: 150px;
+      height: 50px;
+      background-color: #bbdefb;
+      border: 2px solid #2196F3;
+      padding: 10px;
+      margin-top: 10px;
+    }
+
+    /* None Element */
+    .hidden-element {
+      display: none;
+      padding: 10px;
+      background-color: #f8bbd0;
+      border: 2px dashed #e91e63;
+      margin-top: 10px;
+    }
+
+    .toggle-button {
+      margin-top: 20px;
+      padding: 10px 15px;
+      background-color: #9c27b0;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>CSS Display Property Demonstration</h1>
+  
+  <p><strong>Block element:</strong></p>
+  <div class="block-element">This is a block-level element (takes full width).</div>
+  
+  <p><strong>Inline element:</strong></p>
+  <p>This is an example of <span class="inline-element">inline element</span> in a sentence.</p>
+  
+  <p><strong>Inline-block element:</strong></p>
+  <div class="inline-block-element">Inline-block box</div>
+  <div class="inline-block-element">Another box</div>
+
+  <p><strong>None (hidden) element:</strong></p>
+  <div class="hidden-element" id="noneElement">I am hidden until toggled.</div>
+
+  <button class="toggle-button" onclick="toggleVisibility()">Toggle 'None' Element</button>
+
+  <script>
+    function toggleVisibility() {
+      const el = document.getElementById('noneElement');
+      if (el.style.display === 'none') {
+        el.style.display = 'block';
+      } else {
+        el.style.display = 'none';
+      }
+    }
+  </script>
+</body>
+</html>
